@@ -5,13 +5,13 @@ import { ProtocolDefinition } from "../index";
 export default {
   name: "Sperax", // Your protocol's display name, formatted as it will appear in the BondProtocol dApp
   description: "Sperax is an Arbitrum DeFi protocol featuring a yield-aggregator stablecoin, Sperax USD (USDs), and a Uniswap V3 one-click farm launcher, Demeter protocol.", // A short protocol description
-  logoUrl: "https://drive.google.com/drive/folders/1wbmS719X_OdOdg2AzPno4Ow9WAbmgYpu", // svg file
+  logoUrl: "https://sperax.io/assets/bigsperaxlogo.244c6f84.svg", // svg file
   // Links to landing page, socials and docs
   links: {
     governanceVote: "https://snapshot.org/#/speraxdao.eth", // A governance proposal related to bonds
     homepage: "https://www.sperax.io/",
     USDs: "https://app.sperax.io/",
-    demeter: "https://demeter.sperax.io/", 
+    demeter: "https://demeter.sperax.io/",
     twitter: "https://twitter.com/SperaxUSD",
     github: "https://github.com/Sperax",
     medium: "https://medium.com/sperax",
