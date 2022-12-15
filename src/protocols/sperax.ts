@@ -4,8 +4,9 @@ import { ProtocolDefinition } from "../index";
 /* Protocol Template */
 export default {
   name: "Sperax", // Your protocol's display name, formatted as it will appear in the BondProtocol dApp
-  description: "Sperax is an Arbitrum DeFi protocol featuring a yield-aggregator stablecoin, Sperax USD (USDs), and a Uniswap V3 one-click farm launcher, Demeter protocol.", // A short protocol description
-  logoUrl: "https://app.sperax.io/static/media/sperax_icon_green.061d8f89.svg", // svg file
+  description:
+    "Sperax is an Arbitrum DeFi protocol featuring a yield-aggregator stablecoin, Sperax USD (USDs), and a Uniswap V3 one-click farm launcher, Demeter protocol.", // A short protocol description
+  logoUrl: "storageapi.fleek.co/fc635ae1-c8aa-4181-b7db-801a533b8fa9-bucket/SPERAX.svg", // svg file
   // Links to landing page, socials and docs
   links: {
     governanceVote: "https://snapshot.org/#/speraxdao.eth", // A governance proposal related to bonds
@@ -50,7 +51,7 @@ export default {
            Although custom price feeds are supported, some features such as bond price history charts
            do not currently support custom price feeds.
         */
-        { source: "coingecko", apiId: "sperax"},
+        { source: "coingecko", apiId: "sperax" },
         /*
           If you need to add a custom price function please add it in ../custom-price-feeds.ts
           then uncomment the following line and refer to it using the name you set in the
