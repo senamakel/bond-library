@@ -1,6 +1,6 @@
 {
   "name": "@bond-protocol/bond-library",
-  "version": "0.1.30",
+  "version": "0.2.00",
   "author": "spaceturtleship <spaceturtleship@protonmail.com>",
   "license": "MIT",
   "private": false,
@@ -35,8 +35,7 @@
     "typechain": "typechain --target ethers-v5 --out-dir src/core/lp-pairs/contracts 'src/**/lp-pairs/abis/*.json'",
     "protocol": "node ./src/duplicate.js",
     "token": "node ./src/duplicate.js -t",
-    "generate": "ts-node ./src/core/generate-files.ts && prettier --write ./src/core/generated",
-    "prepare": "yarn generate && yarn build"
+    "generate": "ts-node ./src/core/generate-files.ts && prettier --write ./src/core/generated"
   },
   "dependencies": {
     "axios": "^0.27.2",

@@ -1,19 +1,5 @@
 import { Provider } from "@ethersproject/providers";
-import { CHAIN_ID } from "../constants";
-
-export interface Address {
-  chainId: string; // e.g. CHAIN_ID.ETHEREUM_MAINNET - See src/chains/chains.ts CHAIN_ID enum for a list of chain IDs.
-  address: string; // The address you will use to call the create market transaction
-  protocol: string; // e.g. PROTOCOL_NAMES.YOUR_PROTOCOL
-}
-
-export interface Protocol {
-  id: string; // Protocol ID, should be set as PROTOCOL_NAMES.YOUR_PROTOCOL
-  name: string; // Display name of the protocol, this will be shown in the dapp UI
-  logoUrl?: string; // URL to your protocol's logo, preferably .png
-  description: string; // A description of your protocol
-  links: Links;
-}
+import { CHAIN_ID } from "./constants";
 
 export interface Token {
   name: string; // The token name
@@ -29,25 +15,6 @@ export interface LpToken extends Token {
   token1Address: string;
 }
 
-export interface NativeCurrency {
-  name: string;
-  symbol: string;
-  decimals?: number;
-}
-
-export interface Chain {
-  displayName: string;
-  chainName: string;
-  chainId: string;
-  isTestnet: boolean;
-  nativeCurrency: NativeCurrency;
-  rpcUrls: string[];
-  blockExplorerUrls: string[];
-  blockExplorerName: string;
-  image: string;
-  imageAltText: string;
-}
-
 export interface Links {
   governanceVote: string; // REQUIRED: Link to a governance vote allowing your protocol to run a BondProtocol market\
   twitter?: string; // OPTIONAL links to social media, protocol websites etc
@@ -57,12 +24,6 @@ export interface Links {
   telegram?: string;
   homepage?: string;
   staking?: string;
-}
-
-export interface Address {
-  chainId: string; // e.g. CHAIN_ID.ETHEREUM_MAINNET - See src/chains/chains.ts CHAIN_ID enum for a list of chain IDs.
-  address: string; // The address you will use to call the create market transaction
-  protocol: string; // e.g. PROTOCOL_NAMES.YOUR_PROTOCOL
 }
 
 export interface Protocol {
