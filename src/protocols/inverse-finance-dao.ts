@@ -1,4 +1,4 @@
-import { CHAIN_ID } from "../constants";
+import { CHAIN_ID, SUPPORTED_LP_TYPES } from "../constants";
 import { ProtocolDefinition } from "../public-types";
 
 export default {
@@ -45,8 +45,7 @@ export default {
     {
       name: "Balancer INV-DOLA LP",
       symbol: "50INV-50DOLA",
-      //@ts-ignore
-      lpType: SUPPORTED_LP_TYPES.BALANCER_WEIGHTED_POOL,      
+      lpType: SUPPORTED_LP_TYPES.BALANCER_WEIGHTED_POOL,
       addresses: {
         [CHAIN_ID.ETHEREUM_MAINNET]: "0x441b8a1980f2F2E43A9397099d15CC2Fe6D36250",
       },
