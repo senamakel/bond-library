@@ -5,7 +5,7 @@ import { ProtocolDefinition } from "../public-types";
 export default {
   name: "IQ",
   description: "The World's Largest Blockchain & Crypto Encyclopedia",
-  logoUrl: "https://your-dao.defi/your-protocol-logo.png",
+  logoUrl: "https://iq.wiki/branding/downloadassets/logooriginalbrain.png",
 
   links: {
     governanceVote: "https://snapshot.everipedia.com/",
