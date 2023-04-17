@@ -3,7 +3,7 @@ import { ProtocolDefinition } from "../public-types";
 
 /* Protocol Template */
 export default {
-  name: "MVD", // Your display name, formatted just how you like it
+  name: "Metavault", // Your display name, formatted just how you like it
   description: "Metavault DAO is a blockchain-based, community governed investment platform and decentralized venture capital fund.", // A short protocol description
   logoUrl: "https://assets.coingecko.com/coins/images/23899/small/MVD_Coin-simple.png?1681090496",
   links: {
@@ -31,7 +31,7 @@ export default {
       // why use many word wen example do trick
       name: "MVD",
       symbol: "MVD",
-      logoUrl: "https://assets.coingecko.com/coins/images/23899/small/MVD_Coin-simple.png?1681090496",
+      logoUrl: "https://assets.coingecko.com/coins/images/23899/small/MVD_Coin-simple.png",
       // Token contract addresses
       addresses: {
         [CHAIN_ID.ARBITRUM_MAINNET]: "0x15a808ed3846D25e88AE868DE79F1bcB1Ac382B5",
@@ -41,6 +41,14 @@ export default {
         // Check out our docs for supported price sources and their usage
         { source: "coingecko", apiId: "metavault-dao" }, // Lower number, higher priority
       ],
+    },
+    {
+      name: "Metavault Ethereum LP",
+      symbol: "MVD-ETH-LP",
+      logoUrl: "https://assets.coingecko.com/coins/images/23899/small/MVD_Coin-simple.png",
+      priceSources: [],
+      purchaseLinks: { [CHAIN_ID.ARBITRUM_MAINNET]: "https://app.camelot.exchange/liquidity?token1=0x15a808ed3846D25e88AE868DE79F1bcB1Ac382B5&token2=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1" },
+      addresses: { [CHAIN_ID.ARBITRUM_MAINNET]: "0x682BD6921B8b9634EB4635a269EA8Ae857d6Bb4e" },
     },
   ],
 } as ProtocolDefinition;
