@@ -1,4 +1,4 @@
-import { CHAIN_ID, CUSTOM_PRICE_FEEDS } from "../constants";
+import { CHAIN_ID, SUPPORTED_LP_TYPES } from "../constants";
 import { ProtocolDefinition } from "../public-types";
 
 /* Protocol Template */
